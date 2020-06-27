@@ -1,1 +1,44 @@
+<html>
 
+<head>
+    <meta charset="utf-8">
+    <title>text editor</title>
+</head>
+
+<body>
+    <style>
+      .header {
+        background:#333;
+        color:#FFF;
+        text-align:center;
+        font-size:30px;
+      }
+        #t1 {
+            width: 49%;
+            height: 895px;
+            color: green;
+            font-size: 17px;
+            border: 2px solid black;
+        }
+
+        #d1 {
+            width: 49%;
+            height: 895px;
+            border: 2px solid black;
+            float: right;
+        }
+    </style>
+    <div class="header">
+      HTML & CSS // Editor
+    </div>
+    <textarea id="t1" onkeyup="ni()"> </textarea>
+    <div id="d1">
+    </div>
+    <script>
+        function ni() {
+            window.d1.innerHTML = window.t1.value
+        }
+    </script>
+</body>
+
+</html>
